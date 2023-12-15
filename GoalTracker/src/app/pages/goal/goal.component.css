@@ -1,0 +1,14 @@
+.nav-link {
+    font-style: inherit;
+    color: black;
+}
+
+.dashboard {
+    background-color: rgb(29, 29, 66);
+    height: 99%;
+    color: aliceblue;
+}
+
+.plan-out {
+    text-align: center;
+}
