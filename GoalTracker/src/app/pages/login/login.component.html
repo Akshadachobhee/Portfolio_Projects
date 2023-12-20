@@ -11,7 +11,7 @@
 
                         <h2>LOGIN</h2>
                         <h6 class="p-2 ">GOAL TRACKER</h6>
-                        <!-- <button class="btn_login" (click)="cambiar_login()">LOGIN</button> -->
+                        <button class="btn_login" (click)="cambiar_login()">LOGIN</button>
                     </div>
                 </div>
                 <!-- SIGNUP -->
@@ -19,7 +19,7 @@
                     <div class="cont_ba_opcitiy">
                         <h2>SIGN UP</h2>
                         <h6 class="p-2 ">GOAL TRACKER</h6>
-                        <!-- <button class="btn_sign_up mb-4" (click)="cambiar_sign_up()">SIGN UP</button> -->
+                        <button class="btn_sign_up mb-4" (click)="cambiar_sign_up()">SIGN UP</button>
                     </div>
                 </div>
             </div>
@@ -33,34 +33,34 @@
 
             </div>
             <!-- Анимированные LOGIN и SIGNUP после нажатия на кнопку -->
-             <div class="cont_forms" [ngClass]="{'cont_forms_active_login': isActiveLogin, 'cont_forms_active_sign_up': isActiveSignUp}" > 
+            <div class="cont_forms" [ngClass]="{'cont_forms_active_login': isActiveLogin, 'cont_forms_active_sign_up': isActiveSignUp}" >
                 <div class="cont_img_back_">
                     <img src="https://images.unsplash.com/photo-1453831362806-3d5577f014a4?dpr=1&auto=compress,format&fit=crop&w=1199&h=812&q=80&cs=tinysrgb&crop="
                         alt="" />
                 </div>
                 <div class="cont_form_login">
-                    <!-- <a routerLink="#" (click)="ocultar_login_sign_up()"><i class="material-icons">&#xE5C4;</i></a>
-                    <h2>LOGIN</h2> -->
+                    <a routerLink="#" (click)="ocultar_login_sign_up()"><i class="material-icons">&#xE5C4;</i></a>
+                    <h2>LOGIN</h2>
                     <input type="text" placeholder="Email" />
                     <input type="password" placeholder="Password" />
-                    <!-- <button class="btn_login" (click)="cambiar_login()">LOGIN</button> -->
+                    <button class="btn_login" (click)="cambiar_login()">LOGIN</button>
                 </div>
 
                 <div class="cont_form_sign_up">
-                    <!-- <a routerLink="#" (click)="ocultar_login_sign_up()"><i class="material-icons">&#xE5C4;</i></a> -->
+                    <a routerLink="#" (click)="ocultar_login_sign_up()"><i class="material-icons">&#xE5C4;</i></a>
                     <h3 style="padding: 8px 87px ">SIGN UP</h3>
                     
-                    <input type="text"  name="fullname" placeholder="Full Name" />
-                    <input type="text"  name="email" placeholder="Email" />
-                    <input type="text"  name="uname" placeholder="UserName" />
-                    <input type="text"  name="pass" placeholder="Password" />
-                    <input type="text"  name="contactnumber" placeholder="contact Number" />
-                    <input type="text"  name="city" placeholder="City" />
-                    <input type="text"  name="address" placeholder="address" />
-                    <input type="text"  name="role" placeholder="role" />
+                    <input type="text" [(ngModel)]="createUserObj.name" name="fullname" placeholder="Full Name" />
+                    <input type="text" [(ngModel)]="createUserObj.email" name="email" placeholder="Email" />
+                    <input type="text" [(ngModel)]="createUserObj.userName" name="uname" placeholder="UserName" />
+                    <input type="text" [(ngModel)]="createUserObj.password" name="pass" placeholder="Password" />
+                    <input type="text" [(ngModel)]="createUserObj.contactNo" name="contactnumber" placeholder="contact Number" />
+                    <input type="text" [(ngModel)]="createUserObj.city" name="city" placeholder="City" />
+                    <input type="text" [(ngModel)]="createUserObj.address" name="address" placeholder="address" />
+                    <input type="text" [(ngModel)]="createUserObj.role" name="role" placeholder="role" />
 
 
-                    <!-- <button class="btn_sign_up" (click)="cambiar_sign_up()">SIGN UP</button> -->
+                    <button class="btn_sign_up" (click)="cambiar_sign_up()">SIGN UP</button>
 
                 </div>
 
