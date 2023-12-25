@@ -24,7 +24,7 @@ export class LoginPageComponent {
 
  onLogin() {
   if (this.Login_Details.username =='admin' && this.Login_Details.password == '1234') {
-    this.router.navigateByUrl('/home');
+    this.router.navigateByUrl('/dashboard');
     console.log("Login successful");
     this.loginError = false;
 

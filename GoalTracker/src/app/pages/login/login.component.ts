@@ -2,6 +2,8 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { UsersService } from '../../core/service/users/users.service';
 import { FormsModule } from '@angular/forms';
+import { login } from '../../core/model/classes/login';
+import { Route } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -14,8 +16,12 @@ export class LoginComponent {
   isActiveLogin = false;
   isActiveSignUp = false;
 
+  createUserObj:user=new user;
 
-  constructor(private useservice:UsersService){}
+  loginObj:login=new login;
+
+
+  constructor(private useservice:UsersService,loginSrv:LoginService,private router:Route){}
 
   ngOnInit() {}
 
